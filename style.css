@@ -41,20 +41,19 @@ body{
     border: solid 1px green;
     overflow: hidden;
     color: var(--pale-blue);
-}
-
-.profile{
     background-color: var(--dark-blue);
 }
 
-.top{
+.profile-top{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     background-color: var(--violet);
     height: 66%;
     border-radius: 1rem;
     gap: 1rem;
+    color: white;
+    font-weight: 300;
 }
 
 .profile-pic{
@@ -63,4 +62,51 @@ body{
     border: 3px solid white;
     border-radius: 50%;
     margin-left: 2rem;
+}
+
+.intro{
+    font-size: 12px;
+}
+
+.name{
+    font-size: 18px;
+    font-weight: 300;
+    color: white;
+}
+
+.profile-bottom{
+    height: 33%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.work, .play, .study, .social, .self-care, .exercise{
+    display: flex;
+    flex-direction: column;
+}
+
+.work{
+    background-color: var(--light-red);
+}
+
+.icon{
+    height: 60px;
+    width: auto;
+    opacity: 0.4;
+    position: absolute;
+    right: 2.5rem;
+}
+
+.card-top{
+    height: 33%;
+    overflow: hidden;
+    position: relative;
+}
+
+.card-bottom{
+    flex-grow: 1;
+    background-color: var(--dark-blue);
+    z-index: 1;
+    border-radius: 1rem;
 }
